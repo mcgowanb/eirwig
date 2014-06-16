@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+   
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <Spinner
+            android:id="@+id/cso_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:layout_weight="1" >
+             
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/twitter_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:layout_weight="1" />
+         
+        
+        <!--  this textview is only here to shift the spinners to the left
+        and not obfuscate the my location item  -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+     <FrameLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="#D000"
+         android:padding="0dp" >
+
+      <Button
+          android:id="@+id/clearScreen"
+          style="@style/AppBaseTheme"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:onClick="clear"
+          android:text="@string/clear"
+          android:textColor="#ffffff" />
+
+    </FrameLayout>
+    
+    
+</RelativeLayout>

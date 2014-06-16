@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EirWig</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear">Clear</string>
+    <string name="lidl_sites">Lidl Sites</string>
+    <string name="lidl_sites_url">www.lidl.ie</string>
+    <string name="option_1_cso">CSO Data</string>
+    <string name="option_2_cso">Population by nationality</string>
+    <string name="option_3_cso">Employment Data</string>
+    <string name="option_4_cso">Singleton Info</string>
+    <string name="option_5_cso">CSO Option 4</string>
+    <string name="option_1_twi">Twitter Data</string>
+    <string name="option_2_twi">Start twitter stream</string>
+    <string name="option_3_twi">Stop twitter stream</string>
+    <string name="instructions">Instructions</string>
+    <string name="title_activity_display_app_info">eirwig development info</string>
+    
+
+    <!-- Menu items -->
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+     <string name="MAP_TYPE_NORMAL">Normal Map</string>
+    <string name="MAP_TYPE_HYBRID">Hybrid Map</string>
+    <string name="MAP_TYPE_SATTELITE">Sattelite Map</string>
+    <string name="MAP_TYPE_TERRAIN">Terrain Map</string>
+    <string name="action_about">About</string>
+    <string name="action_about_dev">Developer info</string>
+
+    <!-- NetworkActivity -->
+    <string name="page_title">Newest StackOverflow questions tagged \'android\'</string>
+    <string name="updated">Last updated:</string>
+    <string name="lost_connection">Lost connection.</string>
+    <string name="wifi_connected">Wi-Fi reconnected.</string>
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+
+    <string name="app_info_body_2">You can use Eirwig to: \n1: View live streaming of tweets being sent right now in Ireland or Worldwide
+\n2: View a live heat map of where exactly these tweets are coming from
+\n3: Play twitter roulette to see a new image sourced from twitter every 3 seconds (Not Safe For Work!)
+\n4: Find out where all the single men and women are living in Irleland - go cupid!
+\n\nThe more you watch the more you see.
+
+\nIn order to see the twitter roulette, please visit <a href="http://www.eirwig.com">www.eirwig.com</a> where a full web version of this app is available.
+
+\nEnjoy -<a href="http://www.twitter.com/@sligokid">@sligokid</a>; <a href="http://www.twitter.com/@brianmcgowanire">@brianmcgowanire</a>; </string>
+    
+    <color name="markkertext">#000000</color>
+
+    <string-array name="cso_selection_array">
+        <item>@string/option_1_cso</item>
+        <item>@string/option_2_cso</item>
+        <item>@string/option_3_cso</item>
+        <item>@string/option_4_cso</item>
+    </string-array>
+    <string-array name="twitter_selection_array">
+        <item>@string/option_1_twi</item>
+        <item>@string/option_2_twi</item>
+        <item>@string/option_3_twi</item>
+    </string-array>
+
+</resources>

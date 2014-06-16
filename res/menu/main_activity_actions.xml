@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Search, should appear as action button -->
+  <!--   <item android:id="@+id/action_about"
+          android:icon="@drawable/ic_action_about"
+          android:title="@string/action_about"
+          android:showAsAction="ifRoom" />  -->
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_hybrid"
+          android:title="@string/MAP_TYPE_HYBRID"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_normal"
+          android:title="@string/MAP_TYPE_NORMAL"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_sattelite"
+          android:title="@string/MAP_TYPE_SATTELITE"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_terrain"
+          android:title="@string/MAP_TYPE_TERRAIN"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_about"
+          android:title="@string/action_about"
+          android:showAsAction="never" />
+    <item android:id="@+id/action_dev_info"
+          android:title="@string/action_about_dev"
+          android:showAsAction="never" />
+</menu>
