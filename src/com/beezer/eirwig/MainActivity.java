@@ -146,27 +146,26 @@ public class MainActivity extends FragmentActivity implements
 	
 	@Override		//action methods for menu options
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle item selection
-	    switch (item.getItemId()) {
-	        case R.id.action_hybrid:
-	        	mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-	            return true;
-	        case R.id.action_normal:
-	        	mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-	            return true;
-	        case R.id.action_sattelite:
-	        	mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-	            return true;
-	        case R.id.action_terrain:
-	        	mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-	            return true;
-	        case R.id.action_about:
-	        	Intent i = new Intent(getApplicationContext(),DisplayAppInfo.class);
-	            startActivity(i);
-	            return true;
-	        default:
-	            return super.onOptionsItemSelected(item);
-	    }
+	    int itemId = item.getItemId();
+		if (itemId == R.id.action_hybrid) {
+			mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+			return true;
+		} else if (itemId == R.id.action_normal) {
+			mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+			return true;
+		} else if (itemId == R.id.action_sattelite) {
+			mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+			return true;
+		} else if (itemId == R.id.action_terrain) {
+			mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+			return true;
+		} else if (itemId == R.id.action_about) {
+			Intent i = new Intent(getApplicationContext(),DisplayAppInfo.class);
+			startActivity(i);
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	@Override
